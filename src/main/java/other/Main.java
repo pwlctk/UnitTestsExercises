@@ -6,7 +6,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-
     private static String greet = "ABCDEFGHIJKLMNOPRSTUWZ";
 
     public static void main(String[] args) {

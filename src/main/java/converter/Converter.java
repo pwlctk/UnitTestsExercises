@@ -1,7 +1,6 @@
 package converter;
 
 class Converter {
-
     static double celsiusToFahrenheit(double c) {
         if (c < -273.15) {
             throw new UnsupportedOperationException();

@@ -9,11 +9,9 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
@@ -88,11 +86,9 @@ class CalculatorTest {
         assertTrue(baseColors.getOrDefault(color, false));
     }
 
-
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3, 4, 5})
     void testWithValueSource(int argument) {
-
         assertTrue(argument > 0);
     }
 
@@ -160,5 +156,4 @@ class CalculatorTest {
                 -> calculator.parse("bez znaczenia"));
         assertEquals("Niepoprawny numer", result.getMessage());
     }
-
 }
