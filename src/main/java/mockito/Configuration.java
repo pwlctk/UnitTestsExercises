@@ -3,8 +3,8 @@ package mockito;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class Configuration {
-    public String readConfiguration(BufferedReader reader) throws IOException {
+class Configuration {
+    String readConfiguration(BufferedReader reader) throws IOException {
 
 
         String line;

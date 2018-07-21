@@ -1,7 +1,6 @@
 package mockito;
 
 import org.junit.jupiter.api.Test;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 
@@ -10,10 +9,11 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 
-//Niby odczytuje plik za pomocą klasy Configuration, ale dzięki Mockito nie musimy odczytywać pliku
+//Niby odczytuje plik za pomocą klasy Configuration, ale dzięki Mockito nie musimy tak naprawdę odczytywać pliku
+//tylko możemy podać na sztywno wartości
 class ConfigurationTest {
     @Test
-    public void shouldNotReadTheFile() throws IOException {
+    void shouldNotReadTheFile() throws IOException {
         // given
         BufferedReader mock = mock(BufferedReader.class);
         when(mock.readLine())

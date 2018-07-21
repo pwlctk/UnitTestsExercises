@@ -9,7 +9,7 @@ import static org.mockito.Mockito.when;
 class FizzBuzzTest {
 
     @Test
-    public void shouldReturnFizzFor3() {
+    void shouldReturnFizzFor3() {
         // given
         FizzBuzz mock = mock(FizzBuzz.class);
         when(mock.fizzBuzz(3)).thenReturn("Fizz");
@@ -20,7 +20,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturnBuzzFor5() {
+    void shouldReturnBuzzFor5() {
         // given
         FizzBuzz mock = mock(FizzBuzz.class);
         when(mock.fizzBuzz(5)).thenReturn("Buzz");
@@ -31,7 +31,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturnFizzBuzzFor15() {
+    void shouldReturnFizzBuzzFor15() {
         // given
         FizzBuzz mock = mock(FizzBuzz.class);
         when(mock.fizzBuzz(15)).thenReturn("FizzBuzz");
@@ -42,7 +42,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturn4For4() {
+    void shouldReturn4For4() {
         // given
         FizzBuzz mock = mock(FizzBuzz.class);
         when(mock.fizzBuzz(4)).thenReturn("4");

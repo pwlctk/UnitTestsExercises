@@ -1,7 +1,7 @@
 package riskCalculator;
 
-public class RiskCalculator {
-    public String calculate(int impact, int likelihood) throws IllegalArgumentException {
+class RiskCalculator {
+    String calculate(int impact, int likelihood) throws IllegalArgumentException {
         if (impact < 0 || impact > 4 || likelihood < 0 || likelihood > 4)
             throw new IllegalArgumentException();
         int riskInt = impact * impact + likelihood * likelihood;

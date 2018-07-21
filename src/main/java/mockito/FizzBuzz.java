@@ -1,7 +1,6 @@
 package mockito;
 
-public class FizzBuzz {
-
+class FizzBuzz {
 
     String fizzBuzz(int number){
         return "empty";

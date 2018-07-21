@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class CalculatorTwoTest {
 
     @Test
-    public void shouldReturnZeroSixFor3And5() {
+    void shouldReturnZeroSixFor3And5() {
         // given
         CalculatorSinus calculatorSinus = new CalculatorSinus();
         // when
@@ -23,7 +23,7 @@ class CalculatorTwoTest {
 
     //Przeciwprostokątna musi być dłuższa niż przyprostokątna
     @Test
-    public void shouldThrowIllegalArgumentExceptionWhenHypotenuseIsShorterThanCathetus() {
+    void shouldThrowIllegalArgumentExceptionWhenHypotenuseIsShorterThanCathetus() {
         // given
         CalculatorSinus calculatorSinus = new CalculatorSinus();
         // when
@@ -34,7 +34,7 @@ class CalculatorTwoTest {
     }
 
     @Test
-    public void shouldThrowIllegalArgumentExceptionWhenHypotenuseOrCathetusLessThanZero() {
+    void shouldThrowIllegalArgumentExceptionWhenHypotenuseOrCathetusLessThanZero() {
         // given
         CalculatorSinus calculatorSinus = new CalculatorSinus();
         // when
@@ -44,7 +44,7 @@ class CalculatorTwoTest {
     }
 
     @Test
-    public void shouldThrowIllegalArgumentExceptionWhenEqualToZero() {
+    void shouldThrowIllegalArgumentExceptionWhenEqualToZero() {
         // given
         CalculatorSinus calculatorSinus = new CalculatorSinus();
         // when
